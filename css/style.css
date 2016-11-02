@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body, html{
+	width: 100%;
+	height: 100%;	
+	overflow:hidden;
+}
+nav{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.logo{
+    background: #4d9db8;
+    width: 240px;
+    height: 100px;
+    box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+.navigation{
+    background: #2185a6;
+    width: 240px;
+    height: 100%;
+    box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
