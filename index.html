@@ -16,48 +16,57 @@
             <img src="img/logo.png" alt="">
             Open Circles
         </div>
-        <div class="navigation">
-            <ul>
-                <li class='active'>
-                    <a href="#"><div id='user-list'></div>user list</a>
-                </li>
-                <li>
-                    <a href="#"><div id='daily'></div>daily</a>
-                </li>
-                <li>
-                    <a href="#"><div id='brainstorm'></div>brainstorm</a>
-                </li>
-                <li>
-                    <a href="#"><div id='course'></div>course</a>
-                </li>
-                <li>
-                    <a href="#"><div id='leveling-system'></div>leveling system</a>
-                </li>
-                <li>
-                    <a href="#"><div id='live-streams'></div>live streams</a>
-                </li>
-                <li>
-                    <a href="#"><div id='advanced'></div>advanced</a>
-                </li>
-                <li>
-                    <a href="#"><div id='video-analytics'></div>video analytics</a>
-                </li>
-            </ul>
-            <!-- Причину, почему использовались ДИВы для отображения иконок в сайд-меню вместо каких-либо иных вариантов(list-style-image , <img>), проще объяснить на примере при разговоре в живую либо по скайпу.(bolvax1)-->
-        </div>
+        <ul class="navigation">
+            <li class="active">
+                <a href="#"><div id="user-list"></div>user list</a>
+            </li>
+            <li>
+                <a href="#"><div id="daily"></div>daily</a>
+            </li>
+            <li>
+                <a href="#"><div id="brainstorm"></div>brainstorm</a>
+            </li>
+            <li>
+                <a href="#"><div id="course"></div>course</a>
+            </li>
+            <li>
+                <a href="#"><div id="leveling-system"></div>leveling system</a>
+            </li>
+            <li>
+                <a href="#"><div id="live-streams"></div>live streams</a>
+            </li>
+            <li>
+                <a href="#"><div id="advanced"></div>advanced</a>
+            </li>
+            <li>
+                <a href="#"><div id="video-analytics"></div>video analytics</a>
+            </li>
+        </ul>
+            <!-- Причину, почему использовались ДИВы для отображения иконок в сайд-меню вместо каких-либо иных вариантов(list-style-image , <img>), проще объяснить вживую либо по скайпу.(bolvax1)-->
 
     </nav>
     <header>
-    <!-- <div class="toogle-button"></div>
-    <div class="curent-content"></div>
-    <form action="">
-        <input type="text">
-    </form>
-    <div class="filter"></div>
-    <div class="sort-table"></div> -->
-</header>
-<section></section>
-<script src='libs/jquery-3.1.1.min.js'></script>
-<script src='js/script.js'></script>
+        <a href="#" data-toggle=".container" id="sidebar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="curent-content"><p>Users List</p>874 users</div>
+        <form name="sort">
+            <input id="search" value="Search" type="text">
+            <button id="tab-filter">Table Filter</button>
+            <select name="" id="list" size='1'>
+                <option value="1">Dale McCormick</option>
+                <option value="2">Dale McCormick2</option>
+                <option value="3">Dale McCormick3</option>
+                <option value="4">Dale McCormick4</option>
+            </select>
+        </form>
+    </header>
+    <section>
+        
+    </section>
+<script src="libs/jquery-3.1.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
