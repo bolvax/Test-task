@@ -2,40 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css"> -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-<nav>
-    <div class="logo">
-        <img src="img/logo.png" alt="">
-        Open Circles
-    </div>
-    <div class="navigation">
-        <ul>
-            <li id='user-list active'><a href="#">user list</a></li>
-            <li id='daily'><a href="#">daily</a></li>
-            <li id='brainstorm'><a href="#">brainstorm</a></li>
-            <li id='course'><a href="#">course</a></li>
-            <li id='leveling-system'><a href="#">leveling system</a></li>
-            <li id='live-streams'><a href="#">live streams</a></li>
-            <li id='advanced'><a href="#">advanced</a></li>
-            <li id='video-analytics'><a href="#">video analytics</a></li>
-        </ul>
-    </div>
-<!-- <div class="toogle-button"></div>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            Open Circles
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class='active'>
+                    <a href="#"><div id='user-list'></div>user list</a>
+                </li>
+                <li>
+                    <a href="#"><div id='daily'></div>daily</a>
+                </li>
+                <li>
+                    <a href="#"><div id='brainstorm'></div>brainstorm</a>
+                </li>
+                <li>
+                    <a href="#"><div id='course'></div>course</a>
+                </li>
+                <li>
+                    <a href="#"><div id='leveling-system'></div>leveling system</a>
+                </li>
+                <li>
+                    <a href="#"><div id='live-streams'></div>live streams</a>
+                </li>
+                <li>
+                    <a href="#"><div id='advanced'></div>advanced</a>
+                </li>
+                <li>
+                    <a href="#"><div id='video-analytics'></div>video analytics</a>
+                </li>
+            </ul>
+            <!-- Причину, почему использовались ДИВы для отображения иконок в сайд-меню вместо каких-либо иных вариантов(list-style-image , <img>), проще объяснить на примере при разговоре в живую либо по скайпу.(bolvax1)-->
+        </div>
+
+    </nav>
+    <header>
+    <!-- <div class="toogle-button"></div>
     <div class="curent-content"></div>
     <form action="">
         <input type="text">
     </form>
     <div class="filter"></div>
     <div class="sort-table"></div> -->
-</nav>
-<header>
-    
 </header>
 <section></section>
 <script src='libs/jquery-3.1.1.min.js'></script>
