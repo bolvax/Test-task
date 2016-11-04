@@ -11,12 +11,12 @@
 </head>
 <body>
 
-    <nav>
+    <nav id='side-panel'>
         <div class="logo">
             <img src="img/logo.png" alt="">
             Open Circles
         </div>
-        <ul class="navigation">
+        <ul class="navigation" onclick="closeNav()">
             <li class="active">
                 <a href="#"><div id="user-list"></div>user list</a>
             </li>
@@ -45,25 +45,26 @@
             <!-- Причину, почему использовались ДИВы для отображения иконок в сайд-меню вместо каких-либо иных вариантов(list-style-image , <img>), проще объяснить вживую либо по скайпу.(bolvax1)-->
 
     </nav>
-    <header>
-        <a href="#" data-toggle=".container" id="sidebar-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="curent-content"><p>Users List</p>874 users</div>
-        <form name="sort">
-            <input id="search" value="Search" type="text">
-            <button id="tab-filter">Table Filter</button>
-            <select name="" id="list" size='1'>
-                <option value="1">Dale McCormick</option>
-                <option value="2">Dale McCormick2</option>
-                <option value="3">Dale McCormick3</option>
-                <option value="4">Dale McCormick4</option>
-            </select>
-        </form>
-    </header>
-    <section class='section-user-list'>
+    <main id='main'>
+        <header id='head-user-list'>
+            <a href="#" onclick="openNav()" id="sidebar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="curent-content"><p>Users List</p>874 users</div>
+            <form name="sort">
+                <input id="search" value="Search" type="text">
+                <button id="tab-filter">Table Filter</button>
+                <select name="" id="list" size='1'>
+                    <option value="1">Dale McCormick</option>
+                    <option value="2">Dale McCormick2</option>
+                    <option value="3">Dale McCormick3</option>
+                    <option value="4">Dale McCormick4</option>
+                </select>
+            </form>
+        </header>
+    <section id='section-user-list'>
         <table>
             <tr>
                 <th>E-mail</th>
@@ -148,6 +149,7 @@
         </table>
         <div class='show-more'>Show more</div>
     </section>
+    </main>
 <script src="libs/jquery-3.1.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>

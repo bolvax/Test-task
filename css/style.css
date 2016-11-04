@@ -9,37 +9,44 @@ body{
 	/*overflow:hidden;*/
 	font-family: 'Montserrat', sans-serif;
 }
-nav{
+#side-panel{
 	position: absolute;
-	left: -240px;
+	left: 0px;
 	height: 100%;
-	width: 240px;
+	width: 0px;
 	box-sizing: border-box;
-	letter-spacing: 1px;
+	transition: all .5s;
 }
 .logo{
     width: 100%;
     height: 100px;
     padding: 40px 0 40px 68px;
     box-sizing: border-box;
-   -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background: #4d9db8;
 	font-size: 18px;
-    color: #fff;
-
+    color: #fff;  
+    white-space: nowrap;
 }
 .logo img{
 	position: absolute;
 	margin: -6px 0 0 -50px;
 }
+
 .navigation{
     width: 240px;
     height: 100%;
     background: #2185a6;
     box-sizing: border-box;
-   -moz-box-sizing: border-box;
+   	-moz-box-sizing: border-box;  
+    -webkit-transition:  all 0.5s ease-in-out;
+    -moz-transition:   all 0.5s ease-in-out;
+    -ms-transition:   all 0.5s ease-in-out;
+    -o-transition:   all 0.5s ease-in-out;
+    transition:   all 0.5s ease-in-out;
+
 }
-.navigation ul li{
+.navigation li{
 	color: #bddbe4;
 	text-transform: uppercase;
 }
@@ -50,11 +57,7 @@ nav{
     font-weight: 600;
     text-decoration: none;
     color: #bddbe4;
-    -webkit-transition:  background 0.3s ease-in-out;
-    -moz-transition:  background 0.3s ease-in-out;
-    -ms-transition:  background 0.3s ease-in-out;
-    -o-transition:  background 0.3s ease-in-out;
-    transition:  background 0.3s ease-in-out;
+	transition: all .5s;
 }
 .navigation a:hover{
 	color: #fff;
@@ -64,7 +67,6 @@ nav{
 	border-left: 2px solid #fff;
 }
 
-/*Стили иконок*/
 .navigation a div{
 	display: inline-block;
 	width: 20px;
@@ -99,8 +101,11 @@ nav{
 	background-image: url(../img/video-analytics.png);
 }
 
-/******************/
+#main{
+	width: 100%;
+	transition: all .5s;
 
+}
 header{
 	width: 100%;
 	height: 100px;
@@ -110,9 +115,7 @@ header{
     padding:30px 25px;
     background-color: #feb31c;
 }
-header .open-sidebar {
-    left: 240px;
-}
+
 #sidebar-toggle{
 	display: block;
 	position: relative;
@@ -140,6 +143,10 @@ header .open-sidebar {
 .curent-content p{
 	font-weight: bold;
 	font-size: 22px;
+}
+.head-user-list form{
+	position: relative;
+	top:0;
 }
 #search{
 	padding: 10px 40px;
@@ -188,20 +195,20 @@ section{
 	padding: 30px;
 	background-color: #f4f4f4;
 }
-.section-user-list table{
+#section-user-list table{
 	 border-collapse: collapse;
 	 width: 100%;
 	 background-color: #fff;
 	 border-radius: 4px;
 
 }
-.section-user-list th{
+#section-user-list th{
 	padding: 15px 30px;
 	text-align: left;
 	color: #feb31c;
 	border:1px solid #f2f2f3;
 }
-.section-user-list td{
+#section-user-list td{
 	padding: 30px 25px;
 	border:1px solid #f2f2f3;
 	color: #a2a2a6;
@@ -210,7 +217,7 @@ section{
 	color: #363640;
 	font-weight: bold;
 }
-.section-user-list tr:nth-child(2n){
+#section-user-list tr:nth-child(2n){
 	background-color: #fcfcfc;
 }
 .show-more{
