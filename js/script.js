@@ -1,12 +1,12 @@
-	var pageWidth = document.documentElement.clientWidth;
-	var pageHeight = document.body.clientHeight;
+var pageWidth = document.documentElement.clientWidth,
+	pageHeight = document.body.clientHeight,
+	nav = document.getElementById('side-panel'),
+    mainContent = document.getElementById('main'),
+    nav = document.getElementById('side-panel'),
+    toggleBar = document.getElementById('sidebar-toggle');;
 
-	nav = document.getElementById('side-panel');
 	nav.style.height = pageHeight-100+'px';
 
-    var mainContent = document.getElementById('main'),
-    	nav = document.getElementById('side-panel');
-    	toggleBar = document.getElementById('sidebar-toggle');
 function openNav(){
     nav.style.width = '240px';
     mainContent.style.width = (pageWidth-240)+'px';
@@ -20,7 +20,7 @@ function closeNav(){
     mainContent.style.marginLeft = "0px";
     toggleBar.onclick = openNav;
 }
-  function closePpp(){
+function closePpp(){
     popup.style.display = 'none';
 };
 function openPpp(){
@@ -28,5 +28,5 @@ function openPpp(){
 };
 
 document.getElementById("tab-filter").addEventListener("click", openPpp);
-document.getElementById("cross").addEventListener("click", closePpp);
-document.getElementById("save").addEventListener("click", closePpp);
+cross.addEventListener("click", closePpp);
+save.addEventListener("click", closePpp);

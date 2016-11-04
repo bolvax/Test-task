@@ -320,6 +320,11 @@ header{
 	border-radius:5px;
 	border:1px solid #e3e3e9;
 }
+.popup-form select{
+	background: url(../img/arrow.png) no-repeat 170px 20px #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 .popup-form .wide-input{
 	float: left;
 	display: inline-block;
