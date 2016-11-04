@@ -120,6 +120,7 @@ header{
 	display: block;
 	float: left;
 	padding: 12px 0;
+	cursor: pointer;
 }
 #sidebar-toggle .bar{
     display: block;
@@ -128,18 +129,20 @@ header{
     height: 2px;
     background-color: #242430;
     border-radius: 1px;   
+
+
 }
 #sidebar-toggle .bar:last-child{
      margin-bottom: 0;   
 }
-.curent-content{
+.current-content{
 	display: block;
 	float: left;
 	margin-left: 46px;
 	font-size: 14px;
 	padding: 0;
 }
-.curent-content p{
+.current-content p{
 	font-weight: bold;
 	font-size: 22px;
 }
@@ -198,7 +201,7 @@ header{
 #list option{
 	border:none;
 }
-section{
+#section-user-list{
 	position: relative;
 	width: 100%; 
 	box-sizing: border-box;
@@ -241,4 +244,136 @@ section{
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+
+
+#popup{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+#popup section{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-left: -442px;
+	margin-top: -255px;
+	width: 885px;
+	height: 500px;
+}
+
+
+.popup-head{
+	width: 100%;
+	height: 84px;
+	background-color: #fff;
+	border-radius: 5px 5px 0 0;
+}
+.current-user{
+	display: block;
+	float: left;
+	margin: 20px 15px;
+	font-size: 14px;
+	padding: 0;
+}
+.current-user p{
+	font-size: 22px;
+	color: #feb31c;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#cross{
+	float:right;
+	margin: 27px 35px;
+	font-size: 30px;
+	color: #b5b5b8;
+	cursor: pointer;
+}
+
+
+.popup-form{
+	width: 100%;
+	height: 415px;
+	padding: 20px 15px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #f4f4f4;
+	border-radius: 0 0 5px 5px;
+}
+.popup-form label{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 10px;	
+}
+.popup-form input, .popup-form select{
+	display: block;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-radius:5px;
+	border:1px solid #e3e3e9;
+}
+.popup-form .wide-input{
+	float: left;
+	display: inline-block;
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+.popup-form .thin-input{
+	float: left;
+	display: inline-block;
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.sub{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px 25px;
+	font-size: 15px;
+}
+.sub span{
+	color: #feb31c;
+	font-weight: bold;
+}
+.popup-form button{
+	display: inline-block;
+	float: right;
+	min-width: 100px;
+	padding: 12px 10px 10px 10px;
+	margin: 30px 20px 0 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	outline: 0;
+}
+#save{
+	border: 1px solid #61a970;
+	background-color: #00C778;
+}
+#save:hover{
+	background-color: #00AB67;
+	color: #eee;
+}
+#reset-pass, #revoke-acc{
+	border: 1px solid #838383;
+	background-color: #c8c8c8;
+}
+#reset-pass:hover, #revoke-acc:hover{
+	background-color: #BBB;
 }

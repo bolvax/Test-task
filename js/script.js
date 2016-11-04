@@ -20,4 +20,13 @@ function closeNav(){
     mainContent.style.marginLeft = "0px";
     toggleBar.onclick = openNav;
 }
-  
+  function closePpp(){
+    popup.style.display = 'none';
+};
+function openPpp(){
+    popup.style.display = 'block';
+};
+
+document.getElementById("tab-filter").addEventListener("click", openPpp);
+document.getElementById("cross").addEventListener("click", closePpp);
+document.getElementById("save").addEventListener("click", closePpp);
