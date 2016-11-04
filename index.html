@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, height=device-height, initial-scale=0.5"">
     <title>Task</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css"> -->
@@ -10,7 +11,11 @@
     <![endif]-->
 </head>
 <body>
-
+<!-- .................................................. -->
+<!-- .................................................. -->
+<!-- Попап открывается после нажатия на кнопку TABLE FILTER в шапке -->
+<!-- .................................................. -->
+<!-- .................................................. -->
     <nav id='side-panel'>
         <div class="logo">
             <img src="img/logo.png" alt="">
@@ -55,7 +60,7 @@
             <div class="current-content"><p>Users List</p>874 users</div>
             <form name="sort">
                 <input id="search" placeholder="Search" type="text">
-                <button id="tab-filter">Table Filter</button>
+                <button type='button' id="tab-filter">Table Filter</button>
                 <select name="" id="list" size='1'>
                     <option value="1">Dale McCormick</option>
                     <option value="2">Dale McCormick2</option>
@@ -215,25 +220,20 @@
                     <label for="">validated</label>
                     <input value='Yes'  type="text">
                 </div>
-                <div class="thin-input"><label for="">coins</label><input  value='3000' type="text"></div>
-
+                <div class="thin-input">
+                    <label for="">coins</label>
+                    <input  value='3000' type="text">
+                </div>
+                <button type='button' id='save'>save</button>
+                <button type='button'  id='revoke-acc'>revoke access</button>
+                <button type='button'  id='reset-pass'>reset password</button>
                 <div class="sub">
                     <p>Subscription type - <span>99.99</span></p>
                     <p>Subscription date - <span>11/02/2016</span></p>
                 </div>
-               
-                <button type='button' id='save'>save</button>
-                <button type='button'  id='revoke-acc'>revoke access</button>
-                <button type='button'  id='reset-pass'>reset password</button>
-                
-                
-                
-                
-
             </form>
         </section>
     </div>
-<script src="libs/jquery-3.1.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
