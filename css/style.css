@@ -118,7 +118,6 @@ header{
 
 #sidebar-toggle{
 	display: block;
-	position: relative;
 	float: left;
 	padding: 12px 0;
 }
@@ -144,11 +143,16 @@ header{
 	font-weight: bold;
 	font-size: 22px;
 }
-.head-user-list form{
+#head-user-list form{
 	position: relative;
-	top:0;
+	display: block;
+	height: 100%;
+	float:left;
 }
 #search{
+	display: block;
+	float: left;
+
 	padding: 10px 40px;
 	margin-left: 244px;
 	background: url(../img/search.png) no-repeat 12px 9px #feca61;
@@ -157,6 +161,9 @@ header{
 	border-radius: 5px;
 }
 #tab-filter{
+	display: block;
+	float: left;
+	
 	margin-left: 127px;
 	padding: 11px 11px 9px 11px;
 	border-radius: 4px;
@@ -173,12 +180,16 @@ header{
 	color: #fff;
 }
 #list{
+	display: block;
+	float: left;
+	height: 100%;
 	width: 135px;
 	margin-left: 33px;
-	padding: 5px;
+	padding: 0px;
     border: 0;
     background: url(../img/arrow.png) no-repeat right #feb31c;
     -webkit-appearance: none;
+    -moz-appearance: none;
     font-size: 14px;
     background-position-x: 120px;
 	cursor: pointer;
@@ -186,7 +197,6 @@ header{
 }
 #list option{
 	border:none;
-	padding: 40px;
 }
 section{
 	position: relative;
