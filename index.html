@@ -16,43 +16,43 @@
 <!-- Попап открывается после нажатия на кнопку TABLE FILTER в шапке -->
 <!-- .................................................. -->
 <!-- .................................................. -->
-    <nav id='side-panel'>
+    <nav id="side-p" class="side-panel">
         <div class="logo">
             <img src="img/logo.png" alt="">
             Open Circles
         </div>
-        <ul class="navigation" onclick="closeNav()">
+        <ul class="navigation">
             <li class="active">
-                <a href="#"><div id="user-list"></div>user list</a>
+                <a href="#"><div class="user-list"></div>user list</a>
             </li>
             <li>
-                <a href="#"><div id="daily"></div>daily</a>
+                <a href="#"><div class="daily"></div>daily</a>
             </li>
             <li>
-                <a href="#"><div id="brainstorm"></div>brainstorm</a>
+                <a href="#"><div class="brainstorm"></div>brainstorm</a>
             </li>
             <li>
-                <a href="#"><div id="course"></div>course</a>
+                <a href="#"><div class="course"></div>course</a>
             </li>
             <li>
-                <a href="#"><div id="leveling-system"></div>leveling system</a>
+                <a href="#"><div class="leveling-system"></div>leveling system</a>
             </li>
             <li>
-                <a href="#"><div id="live-streams"></div>live streams</a>
+                <a href="#"><div class="live-streams"></div>live streams</a>
             </li>
             <li>
-                <a href="#"><div id="advanced"></div>advanced</a>
+                <a href="#"><div class="advanced"></div>advanced</a>
             </li>
             <li>
-                <a href="#"><div id="video-analytics"></div>video analytics</a>
+                <a href="#"><div class="video-analytics"></div>video analytics</a>
             </li>
         </ul>
             <!-- Причину, почему использовались ДИВы для отображения иконок в сайд-меню вместо каких-либо иных вариантов(list-style-image , <img>), проще объяснить вживую либо по скайпу.(bolvax1)-->
 
     </nav>
-    <main id='main'>
-        <header id='head-user-list'>
-            <a onclick="openNav()" id="sidebar-toggle">
+    <main class="main" id="main-content">
+        <header id="head-user-list">
+            <a id="sidebar-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -60,8 +60,8 @@
             <div class="current-content"><p>Users List</p>874 users</div>
             <form name="sort">
                 <input id="search" placeholder="Search" type="text">
-                <button type='button' id="tab-filter">Table Filter</button>
-                <select name="" id="list" size='1'>
+                <button type="button" id="tab-filter">Table Filter</button>
+                <select name="" id="list" size="1">
                     <option value="1">Dale McCormick</option>
                     <option value="2">Dale McCormick2</option>
                     <option value="3">Dale McCormick3</option>
@@ -69,7 +69,7 @@
                 </select>
             </form>
         </header>
-    <section id='section-user-list'>
+    <section id="section-user-list">
         <table>
             <tr>
                 <th>E-mail</th>
@@ -80,79 +80,79 @@
                 <th>Subscription</th>    
             </tr>
             <tr>
-                <td><span class='main-cont'>leffler.karelle@marcellus.net</span></td>
-                <td><span class='main-cont'>Lewis </span> Taylor</td>
+                <td><span class="main-cont">leffler.karelle@marcellus.net</span></td>
+                <td><span class="main-cont">Lewis </span> Taylor</td>
                 <td>Business</td>
                 <td>green</td>
                 <td>Korea</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>karolann_walker@yahoo.com</span></td>
-                <td><span class='main-cont'>Katherine</span> Rogers</td>
+                <td><span class="main-cont">karolann_walker@yahoo.com</span></td>
+                <td><span class="main-cont">Katherine</span> Rogers</td>
                 <td>Business</td>
                 <td>olive</td>
                 <td>Rwanda</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>lucile.mcdermott@yahoo.com</span></td>
-                <td><span class='main-cont'>Francisco</span> Webster</td>
+                <td><span class="main-cont">lucile.mcdermott@yahoo.com</span></td>
+                <td><span class="main-cont">Francisco</span> Webster</td>
                 <td>Private</td>
                 <td>aqua</td>
                 <td>Guam</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>elfrieda_sanford@hagenes.co.uk</span></td>
-                <td><span class='main-cont'>Louisa</span> Griffith</td>
+                <td><span class="main-cont">elfrieda_sanford@hagenes.co.uk</span></td>
+                <td><span class="main-cont">Louisa</span> Griffith</td>
                 <td>Business</td>
                 <td>olive</td>
                 <td>Uruguay</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>daphney.okuneva@gmail.com</span></td>
-                <td><span class='main-cont'>Alan </span>Ellis</td>
+                <td><span class="main-cont">daphney.okuneva@gmail.com</span></td>
+                <td><span class="main-cont">Alan </span>Ellis</td>
                 <td>Private</td>
                 <td>green</td>
                 <td>Djibouti</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>ezequiel_rutherford@yahoo.com</span></td>
-                <td><span class='main-cont'>Edward </span>Jacobs</td>
+                <td><span class="main-cont">ezequiel_rutherford@yahoo.com</span></td>
+                <td><span class="main-cont">Edward </span>Jacobs</td>
                 <td>Business</td>
                 <td>black</td>
                 <td>Jersey</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>leffler.karelle@marcellus.net</span></td>
-                <td><span class='main-cont'>Lewis </span>Taylor</td>
+                <td><span class="main-cont">leffler.karelle@marcellus.net</span></td>
+                <td><span class="main-cont">Lewis </span>Taylor</td>
                 <td>Business</td>
                 <td>green</td>
                 <td>Korea</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>karolann_walker@yahoo.com</span></td>
-                <td><span class='main-cont'>Katherine </span>Rogers</td>
+                <td><span class="main-cont">karolann_walker@yahoo.com</span></td>
+                <td><span class="main-cont">Katherine </span>Rogers</td>
                 <td>Rogers</td>
                 <td>olive</td>
                 <td>Rwanda</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
             <tr>
-                <td><span class='main-cont'>lucile.mcdermott@yahoo.com</span></td>
-                <td><span class='main-cont'>Francisco </span>Webster</td>
+                <td><span class="main-cont">lucile.mcdermott@yahoo.com</span></td>
+                <td><span class="main-cont">Francisco </span>Webster</td>
                 <td>Private</td>
                 <td>aqua</td>
                 <td>Guam</td>
-                <td><span class='main-cont'>11/02/2016</span></td>
+                <td><span class="main-cont">11/02/2016</span></td>
             </tr>
         </table>
-        <div class='show-more'>Show more</div>
+        <div class="show-more">Show more</div>
     </section>
     </main>
     <div id="popup">
@@ -165,33 +165,33 @@
             </div>
             <form class="popup-form" action="">
                 <div class="wide-input">
-                    <label class='.wide-input' for="e-mail">E-mail</label>
-                    <input name='e-mail' placeholder='leffler.carel@marcelus.net' type="text">
+                    <label class=".wide-input" for="e-mail">E-mail</label>
+                    <input name="e-mail" placeholder="leffler.carel@marcelus.net" type="text">
                 </div>
 
                 <div class="thin-input">
                     <label for="">first name</label>
-                    <input name='first-name' placeholder='Lewis' type="text">
+                    <input name="first-name" placeholder="Lewis" type="text">
                 </div>
 
                 <div class="thin-input">
                     <label for="">last name</label>
-                    <input name='last-name' placeholder='Taylor' type="text">
+                    <input name="last-name" placeholder="Taylor" type="text">
                 </div>
 
                 <div class="wide-input">
                     <label for="">country</label>
-                    <input name='country' placeholder='Rwanda' type="text">
+                    <input name="country" placeholder="Rwanda" type="text">
                 </div>
 
                 <div class="wide-input">
                     <label for="">company</label>
-                    <input name='company' placeholder='Company name' type="text">
+                    <input name="company" placeholder="Company name" type="text">
                 </div>
 
                 <div class="thin-input">
                     <label for="">type</label>
-                    <select name="" size='1'>
+                    <select name="" size="1">
                         <option >Business</option>
                         <option >Private</option>
                         <option >Rogers</option>
@@ -200,7 +200,7 @@
 
                 <div class="thin-input">
                     <label for="">level</label>
-                    <select name="" size='1'>
+                    <select name="" size="1">
                         <option >1</option>
                         <option >2</option>
                         <option >3</option>
@@ -218,15 +218,15 @@
 
                 <div class="thin-input">
                     <label for="">validated</label>
-                    <input value='Yes'  type="text">
+                    <input value="Yes"  type="text">
                 </div>
                 <div class="thin-input">
                     <label for="">coins</label>
-                    <input  value='3000' type="text">
+                    <input  value="3000" type="text">
                 </div>
-                <button type='button' id='save'>save</button>
-                <button type='button'  id='revoke-acc'>revoke access</button>
-                <button type='button'  id='reset-pass'>reset password</button>
+                <button type="button" id="save">save</button>
+                <button type="button"  id="revoke-acc">revoke access</button>
+                <button type="button"  id="reset-pass">reset password</button>
                 <div class="sub">
                     <p>Subscription type - <span>99.99</span></p>
                     <p>Subscription date - <span>11/02/2016</span></p>

@@ -9,11 +9,10 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f4f4f4;
 }
-#side-panel{
+.side-panel{
 	position: absolute;
 	left: 0px;
 	height: 100%;
-	width: 0px;
 	-webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	box-sizing: border-box;
@@ -22,19 +21,19 @@ body{
 .logo{
     width: 100%;
     height: 100px;
-    padding: 40px 0 40px 68px;
+    padding: 20px 0 20px 40px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     background: #4d9db8;
 	font-size: 18px;
     color: #fff;  
     white-space: nowrap;
+	line-height: 60px;
 }
 .logo img{
-	position: absolute;
-	margin: -6px 0 0 -50px;
+    vertical-align: middle;
+    padding-right: 10px;
 }
-
 .navigation{
     width: 240px;
     height: 100%;
@@ -78,32 +77,32 @@ body{
 	background-position: center;
 	background-repeat: no-repeat;
 }
-#user-list{
+.user-list{
 	background-image: url(../img/user-list.png);
 }
-#daily{
+.daily{
 	background-image: url(../img/daily.png);
 }
-#brainstorm{
+.brainstorm{
 	background-image: url(../img/brainstorm.png);
 }
-#course{
+.course{
 	background-image: url(../img/course.png);
 }
-#leveling-system{
+.leveling-system{
 	background-image: url(../img/leveling-system.png);
 }
-#live-streams{
+.live-streams{
 	background-image: url(../img/live-streams.png);
 }
-#advanced{
+.advanced{
 	background-image: url(../img/advanced.png);
 }
-#video-analytics{
+.video-analytics{
 	background-image: url(../img/video-analytics.png);
 }
 
-#main{
+.main{
 	width: 100%;
 	transition: all .5s;
 }
